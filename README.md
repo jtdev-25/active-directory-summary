@@ -139,6 +139,13 @@ New-GPLink -Name "SecurityPolicy" -Target "OU=Users,DC=corp,DC=local"
   <li><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/">Group Policy Settings</a></li>
 </ul>
 
+<p> <b>Images and extra sources: </b><img width="929" alt="Screenshot 2025-04-14 at 3 03 17 PM" src="https://github.com/user-attachments/assets/86d08715-19a4-4254-81ab-4eb8f0c9b630" />
+ <img width="922" alt="Screenshot 2025-04-14 at 3 12 14 PM" src="https://github.com/user-attachments/assets/823e593f-44eb-4d92-b06d-69d81e7a9cc7" />
+ <img width="746" alt="Screenshot 2025-04-14 at 3 17 17 PM" src="https://github.com/user-attachments/assets/b6eee247-6339-40b8-bc0d-2440ef6a4e25" /> <img width="423" alt="Screenshot 2025-04-14 at 3 20 10 PM" src="https://github.com/user-attachments/assets/886f3610-b390-49dc-bbf8-318e6d61c55a" /> <img width="435" alt="Screenshot 2025-04-14 at 3 29 36 PM" src="https://github.com/user-attachments/assets/5c8ad0e7-bca1-4790-8c31-794bcd3dbb90" />
+<img width="451" alt="Screenshot 2025-04-14 at 4 25 40 PM" src="https://github.com/user-attachments/assets/4031ca9f-1164-45a7-ad29-96ce4206c5c3" />
+<img width="452" alt="Screenshot 2025-04-14 at 4 28 16 PM" src="https://github.com/user-attachments/assets/577837cc-2118-4789-b795-5d9baf442e66" />
+  <br><a href ="https://www.youtube.com/watch?v=qYwzrarxmws"> How to view and modify object permissions </a>
+</p>
 <p>💬 <em>Feel free to contribute or report issues via GitHub!</em></p>
 
 </body>
