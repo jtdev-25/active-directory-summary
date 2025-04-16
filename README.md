@@ -36,7 +36,8 @@
   <li>Updated OS & patches</li>
   <li>Internet for updates</li>
 </ul>
-
+<img width="460" alt="Screenshot 2025-04-14 at 3 03 17 PM" src="https://github.com/user-attachments/assets/86d08715-19a4-4254-81ab-4eb8f0c9b630" />
+<img width="520" alt="Screenshot 2025-04-14 at 3 12 14 PM" src="https://github.com/user-attachments/assets/823e593f-44eb-4d92-b06d-69d81e7a9cc7" />
 <h2 id="environment-setup">🖥️ Environment Setup</h2>
 <pre><code>Rename-Computer -NewName "AD-SERVER" -Restart</code></pre>
 
@@ -48,7 +49,7 @@
   <li>Choose <em>Role-based installation</em></li>
   <li>Select <strong>Active Directory Domain Services</strong></li>
 </ol>
-
+<img width="451" alt="Screenshot 2025-04-14 at 4 25 40 PM" src="https://github.com/user-attachments/assets/4031ca9f-1164-45a7-ad29-96ce4206c5c3" />
 <h3>PowerShell Method</h3>
 <pre><code>Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools</code></pre>
 
@@ -94,6 +95,8 @@ Set-ADAccountPassword -Identity "asmith" -NewPassword (ConvertTo-SecureString "N
 Disable-ADAccount -Identity "asmith"
 Enable-ADAccount -Identity "asmith"
 </code></pre>
+<img width="523" alt="Screenshot 2025-04-14 at 3 20 10 PM" src="https://github.com/user-attachments/assets/886f3610-b390-49dc-bbf8-318e6d61c55a" /> 
+<img width="435" alt="Screenshot 2025-04-14 at 3 29 36 PM" src="https://github.com/user-attachments/assets/5c8ad0e7-bca1-4790-8c31-794bcd3dbb90" />
 
 <h2 id="step-6-group-management">👥 Step 6: Group Management</h2>
 
@@ -106,6 +109,7 @@ New-ADGroup -Name "HR Team" -GroupScope Global -Path "OU=Groups,DC=corp,DC=local
 <pre><code>
 Add-ADGroupMember -Identity "HR Team" -Members "asmith"
 </code></pre>
+<img width="746" alt="Screenshot 2025-04-14 at 3 17 17 PM" src="https://github.com/user-attachments/assets/b6eee247-6339-40b8-bc0d-2440ef6a4e25" /> 
 
 <h2 id="step-7-group-policy-objects-gpos">🛡️ Step 7: Group Policy Objects (GPOs)</h2>
 
@@ -122,6 +126,7 @@ New-GPLink -Name "SecurityPolicy" -Target "OU=Users,DC=corp,DC=local"
   <li>Desktop wallpaper</li>
   <li>Software restriction policies</li>
 </ul>
+<img width="452" alt="Screenshot 2025-04-14 at 4 28 16 PM" src="https://github.com/user-attachments/assets/577837cc-2118-4789-b795-5d9baf442e66" />
 
 <h2 id="step-8-best-practices--maintenance">🧠 Step 8: Best Practices & Maintenance</h2>
 <ul>
@@ -134,17 +139,12 @@ New-GPLink -Name "SecurityPolicy" -Target "OU=Users,DC=corp,DC=local"
 
 <h2 id="references">📚 References</h2>
 <ul>
-  <li><a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/">Microsoft Docs - AD DS</a></li>
-  <li><a href="https://docs.microsoft.com/en-us/powershell/module/addsadministration/">PowerShell AD Cmdlets</a></li>
-  <li><a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/">Group Policy Settings</a></li>
+  <li><a href="https://r0ttenbeef.github.io/Active-Directory-Local-Lab-Environment-Setup/">Active Directory Local Lab Environment Setup </a></li>
+  <li><a href="https://www.windows-active-directory.com/object-permissions-active-directory.html">Active Directory Object permissions: Step-by-Step guide to managing permissions using GPOs, ADUC, and PowerShell</a></li>
+  <li><a href="https://rootdse.org/posts/active-directory-lab-setup-add-data/">Active Directory Lab: AD Domain</a></li>
+  <li><a href ="https://www.youtube.com/watch?v=qYwzrarxmws"> How to view and modify object permissions </a></li>
 </ul>
 
-<p> <b>Images and extra sources: </b><img width="929" alt="Screenshot 2025-04-14 at 3 03 17 PM" src="https://github.com/user-attachments/assets/86d08715-19a4-4254-81ab-4eb8f0c9b630" />
- <img width="922" alt="Screenshot 2025-04-14 at 3 12 14 PM" src="https://github.com/user-attachments/assets/823e593f-44eb-4d92-b06d-69d81e7a9cc7" />
- <img width="746" alt="Screenshot 2025-04-14 at 3 17 17 PM" src="https://github.com/user-attachments/assets/b6eee247-6339-40b8-bc0d-2440ef6a4e25" /> <img width="423" alt="Screenshot 2025-04-14 at 3 20 10 PM" src="https://github.com/user-attachments/assets/886f3610-b390-49dc-bbf8-318e6d61c55a" /> <img width="435" alt="Screenshot 2025-04-14 at 3 29 36 PM" src="https://github.com/user-attachments/assets/5c8ad0e7-bca1-4790-8c31-794bcd3dbb90" />
-<img width="451" alt="Screenshot 2025-04-14 at 4 25 40 PM" src="https://github.com/user-attachments/assets/4031ca9f-1164-45a7-ad29-96ce4206c5c3" />
-<img width="452" alt="Screenshot 2025-04-14 at 4 28 16 PM" src="https://github.com/user-attachments/assets/577837cc-2118-4789-b795-5d9baf442e66" />
-  <br><a href ="https://www.youtube.com/watch?v=qYwzrarxmws"> How to view and modify object permissions </a>
 </p>
 <p>💬 <em>Feel free to contribute or report issues via GitHub!</em></p>
 
