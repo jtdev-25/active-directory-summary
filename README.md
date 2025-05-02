@@ -25,8 +25,8 @@
   <li><a href="#references">References</a></li>
 </ul>
 
-<h2 id="overview">📌 Overview</h2>
-<p>Active Directory (AD) is a directory service developed by Microsoft. This guide walks you through building an AD domain, managing users, devices, and applying policies using GUI and PowerShell.</p>
+<h2 id="overview">❓ Overview ❓</h2>
+<p>Active Directory Data Storage(ADDS) is a directory service developed by Microsoft for the sole purpose of providing companies with the ability to manage user accounts; This guide walks you through building an AD domain as well as a user-based virtual machine, managing users, devices, and applying policies.</p>
 
 <h2 id="prerequisites">✅ Prerequisites</h2>
 <ul>
