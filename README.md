@@ -9,22 +9,6 @@
 
 <p>A complete step-by-step guide to set up and manage <strong>Active Directory</strong> on Windows Server. Includes installation, configuration, user and group management, and domain policies.</p>
 
-<h2>📁 Table of Contents</h2>
-<ul>
-  <li><a href="#overview">Overview</a></li>
-  <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#environment-setup">Environment Setup</a></li>
-  <li><a href="#step-1-install-active-directory-domain-services-ad-ds">Step 1: Install AD DS</a></li>
-  <li><a href="#step-2-promote-server-to-domain-controller">Step 2: Promote to Domain Controller</a></li>
-  <li><a href="#step-3-configure-dns-and-domain">Step 3: Configure DNS</a></li>
-  <li><a href="#step-4-create-organizational-units-ous">Step 4: Create OUs</a></li>
-  <li><a href="#step-5-user-account-management">Step 5: User Management</a></li>
-  <li><a href="#step-6-group-management">Step 6: Group Management</a></li>
-  <li><a href="#step-7-group-policy-objects-gpos">Step 7: GPOs</a></li>
-  <li><a href="#step-8-best-practices--maintenance">Step 8: Best Practices</a></li>
-  <li><a href="#references">References</a></li>
-</ul>
-
 <h2 id="overview">❓ Overview ❓</h2>
 <p>Active Directory Data Storage(ADDS) is a directory service developed by Microsoft for the sole purpose of providing companies with the ability to manage user accounts; This guide walks you through building an AD domain as well as a user-based virtual machine, managing users, devices, and applying policies.</p>
 
@@ -38,8 +22,15 @@
 </ul>
 <img width="460" alt="Screenshot 2025-04-14 at 3 03 17 PM" src="https://github.com/user-attachments/assets/86d08715-19a4-4254-81ab-4eb8f0c9b630" />
 <img width="520" alt="Screenshot 2025-04-14 at 3 12 14 PM" src="https://github.com/user-attachments/assets/823e593f-44eb-4d92-b06d-69d81e7a9cc7" />
+
 <h2 id="environment-setup">🖥️ Environment Setup</h2>
-<pre><code>Rename-Computer -NewName "AD-SERVER" -Restart</code></pre>
+<ul>
+  <li>Create both VMs: client = windows 10, domain = windows 2022 pro  both connected to same VNet and RscGrp.</li>
+    </li>Set domain private IPv4(static); Networking  Network Settings  Ipconfig selection  “Static”</li>
+<li> Adjust firewall inside of domain VM. Right click start select “Run” and input “wf.msc”  deactivate 3 firewalls via(Windows Defender Firewall Properties) and select apply then okay; disable: Domain,Private,Public.</li>
+<li>	Change DNS settings for Client-1 to DC-1  Copy DC-1 private IP  network settings for Client-1  Ipconfig selection  “DNS servers” switch to “Custom”  paste DC-1 private IP</li>
+<li>	Test for connectivity between VMs  open powershell in client  ping “10.0.0.4” then “ipconfig /all”  the 2nd command confirms the dns server</li>
+</ul>
 
 <h2 id="step-1-install-active-directory-domain-services-ad-ds">🧱 Step 1: Install AD DS</h2>
 <h3>GUI Method</h3>
