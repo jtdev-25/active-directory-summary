@@ -7,7 +7,7 @@
 
 <h1>🛠️ Active Directory Setup Guide</h1>
 
-<p>A complete step-by-step guide to set up and manage <strong>Active Directory</strong> on Windows Server. Includes installation, configuration, user and group management, and domain policies.</p>
+<p>A complete step-by-step guide to set up and manage <strong>Active Directory</strong> on Windows Server. Includes installation, configuration, user and group management.</p>
 
 <h2>❓ Overview ❓</h2>
 <p>Active Directory Data Storage(ADDS) is a directory service developed by Microsoft for the sole purpose of providing companies with the ability to manage user accounts; This guide walks you through building an AD domain as well as a user-based virtual machine, managing users, devices, and applying policies.</p>
@@ -54,11 +54,13 @@
 </ol>
 
 <img width="451" alt="Screenshot 2025-04-14 at 4 25 40 PM" src="https://github.com/user-attachments/assets/4031ca9f-1164-45a7-ad29-96ce4206c5c3" />
-v.	Creating Users with PowerShell: Logging on as a domain admin to create users and manage access-pathways
-1.	Start w/ “start” and “System” to get to “Remote desktop”  Focus on users accounts
-a.	Go to PowerShell ISE then copy script from lab sources. Must create “new file” what the script
-
-<h2 id="references">📚 References</h2>
+<h2> 🧑‍🧒‍🧒 Creating Users with PowerShell: Logging on as a domain admin to create users and manage access-pathways </h2>
+<ol><li>	Start w/ “start” and “System” to get to “Remote desktop” ➡️ Focus on users accounts </li>
+<ol>
+<li> Go to PowerShell ISE then copy script from lab sources. Must create “new file” what the script </li>
+</ol>
+  </ol>
+<h2>📚 References</h2>
 <ul>
   <li><a href="https://r0ttenbeef.github.io/Active-Directory-Local-Lab-Environment-Setup/">Active Directory Local Lab Environment Setup </a></li>
   <li><a href="https://www.windows-active-directory.com/object-permissions-active-directory.html">Active Directory Object permissions: Step-by-Step guide to managing permissions using GPOs, ADUC, and PowerShell</a></li>
@@ -67,7 +69,6 @@ a.	Go to PowerShell ISE then copy script from lab sources. Must create “new fi
 </ul>
 
 </p>
-<p>💬 <em>Feel free to contribute or report issues via GitHub!</em></p>
 
 </body>
 </html>
